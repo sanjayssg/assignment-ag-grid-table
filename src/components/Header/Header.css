@@ -1,0 +1,23 @@
+.dashboard-header {
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--line);
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.dashboard-header__eyebrow {
+  color: var(--ink-50);
+}
+
+.dashboard-header__title {
+  font-size: 24px;
+  color: var(--ink);
+}
+
+.dashboard-header__subtitle {
+  max-width: 640px;
+  font-size: 14px;
+  line-height: 1.55;
+  color: var(--ink-50);
+}

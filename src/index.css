@@ -1,0 +1,155 @@
+:root {
+  color-scheme: light;
+  --ink: #09090b;
+  --ink-70: rgba(9, 9, 11, 0.72);
+  --ink-50: rgba(9, 9, 11, 0.5);
+  --ink-35: rgba(9, 9, 11, 0.35);
+  --paper: #f8f8f9;
+  --surface: #ffffff;
+  --surface-sunk: #f4f4f5;
+  --line: #e4e4e7;
+  --line-strong: #d4d4d8;
+
+  --accent-gold: #f59e0b;
+  --accent-gold-text: #b45309;
+
+  --status-active: #059669;
+  --status-active-text: #047857;
+  --status-active-tint: #ecfdf5;
+  --status-active-border: #a7f3d0;
+  --status-inactive: #71717a;
+  --status-inactive-text: #52525b;
+  --status-inactive-tint: #f4f4f5;
+  --status-inactive-border: #e4e4e7;
+
+  --dept-engineering: #16a34a;
+  --dept-marketing: #2563eb;
+  --dept-sales: #ea580c;
+  --dept-hr: #9333ea;
+  --dept-finance: #dc2626;
+
+  --dept-engineering-text: #15803d;
+  --dept-marketing-text: #1d4ed8;
+  --dept-sales-text: #c2410c;
+  --dept-hr-text: #7e22ce;
+  --dept-finance-text: #b91c1c;
+
+  --dept-engineering-tint: #f0fdf4;
+  --dept-marketing-tint: #eff6ff;
+  --dept-sales-tint: #fff7ed;
+  --dept-hr-tint: #faf5ff;
+  --dept-finance-tint: #fef2f2;
+
+  --dept-engineering-border: #bbf7d0;
+  --dept-marketing-border: #bfdbfe;
+  --dept-sales-border: #fed7aa;
+  --dept-hr-border: #e9d5ff;
+  --dept-finance-border: #fecaca;
+
+  --font-display: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-label: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-body: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, monospace;
+
+  --radius-sm: 4px;
+  --radius-md: 6px;
+  --radius-lg: 8px;
+  --shadow-card: 0 1px 2px rgba(9, 9, 11, 0.04);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  font-family: var(--font-display);
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+p {
+  margin: 0;
+}
+
+button {
+  font-family: inherit;
+}
+
+::selection {
+  background: var(--ink);
+  color: var(--surface);
+}
+
+.eyebrow {
+  font-family: var(--font-label);
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.mono {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+}
+
+[data-tone="engineering"] {
+  --tone: var(--dept-engineering);
+  --tone-text: var(--dept-engineering-text);
+  --tone-tint: var(--dept-engineering-tint);
+  --tone-border: var(--dept-engineering-border);
+}
+[data-tone="marketing"] {
+  --tone: var(--dept-marketing);
+  --tone-text: var(--dept-marketing-text);
+  --tone-tint: var(--dept-marketing-tint);
+  --tone-border: var(--dept-marketing-border);
+}
+[data-tone="sales"] {
+  --tone: var(--dept-sales);
+  --tone-text: var(--dept-sales-text);
+  --tone-tint: var(--dept-sales-tint);
+  --tone-border: var(--dept-sales-border);
+}
+[data-tone="hr"] {
+  --tone: var(--dept-hr);
+  --tone-text: var(--dept-hr-text);
+  --tone-tint: var(--dept-hr-tint);
+  --tone-border: var(--dept-hr-border);
+}
+[data-tone="finance"] {
+  --tone: var(--dept-finance);
+  --tone-text: var(--dept-finance-text);
+  --tone-tint: var(--dept-finance-tint);
+  --tone-border: var(--dept-finance-border);
+}
+[data-tone="active"] {
+  --tone: var(--status-active);
+  --tone-text: var(--status-active-text);
+  --tone-tint: var(--status-active-tint);
+  --tone-border: var(--status-active-border);
+}
+[data-tone="inactive"] {
+  --tone: var(--status-inactive);
+  --tone-text: var(--status-inactive-text);
+  --tone-tint: var(--status-inactive-tint);
+  --tone-border: var(--status-inactive-border);
+}
